@@ -1,0 +1,87 @@
+h1 {
+  color: #0065fc;
+}
+ul {
+  list-style-type: none;
+}
+
+.conteneur-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#main {
+  width: auto;
+  height: auto;
+}
+
+#resultat-recherche .element {
+  width: 33%;
+}
+
+#resultat-recherche .element .image-resultat {
+  overflow: hidden;
+  position: relative;
+  height: 160px;
+  width: 100%;
+}
+#resultat-recherche .element .image-resultat img {
+  width: 100%;
+  height: 150px;
+  margin: 0 auto;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav li {
+  list-style: none;
+  margin: 10px;
+}
+#navigation {
+  display: flex;
+  justify-content: space-between;
+}
+footer {
+  width: 100%;
+  list-style: none;
+  border-top: 1px #000;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+}
+footer .colonne-footer {
+  width: 33%;
+}
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
+}
+#aside hotel-populaire {
+  display: flex;
+  width: 35%;
+  background-color: #f2f2f2;
+}
+.aside images-hotel {
+  width: 30%;
+  height: 150px;
+  margin: 0 auto;
+}
+#navigation li a {
+  text-decoration: none;
+  color: gray;
+  padding: 20px 5px 5px 5px;
+}
+#navigation li a.menu-actif {
+  color: #0065fc;
+  border-top: 2px solid #0065fc;
+}
+
+#navigation li #boutton-inscrire {
+  color: #0065fc;
+}

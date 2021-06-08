@@ -2,6 +2,12 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/res.css" />
     <link rel="stylesheet" href="assets/css/fontawesome/css/all.min.css" />
     <title>Reservia</title>
@@ -22,38 +28,52 @@
           </div>
 
           <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+
           <p>En plein centre ville ou en plein nature</p>
           <i class="fas fa-map-marker-alt"></i>
-          <input type="text" />
 
-          <div id="barre_recherche">
-            <span>
-              <i class="fab fa-map-marker-alt"></i>
-            </span>
-            <form action="#" method="post">
-              <input
-                type="text"
-                name="ville"
-                id="ville"
-                placeholder="Rechercher une ville"
-              />
-              <input type="button" value="Rechercher" />
-            </form>
-            <p>Marseille,France</p>
-            Recherche
-          </div>
-
-          <ul>
-            <li><a href="#">Filtres</a></li>
-            <li><a href="#">Familial</a></li>
-            <li><a href="#">Romantique</a></li>
-            <li><a href="#">Animaux autorisé</a></li>
-          </ul>
-          <p>
-            <img src="#" alt="photo" />
-            Plus de 500 logements sont disponibledans cette ville
-          </p>
+          <span>
+            <i class="fab fa-map-marker-alt"></i>
+          </span>
+          <form action="#" method="post">
+            <input
+              type="text"
+              name="ville"
+              id="ville"
+              placeholder="Rechercher une ville"
+            />
+            <input type="button" value="Rechercher" />
+          </form>
+          <p>Marseille,France</p>
+          Recherche
         </div>
+
+        <span>Filtres</span>
+        <ul id="boutton-filtre">
+          <li>
+            <span><i class="fas fa-money-bill-wave"></i></span
+            ><a href="#">Economiques</a>
+          </li>
+
+          <li>
+            <span><i class="fas fa-child"></i></span><a href="#">Familial</a>
+          </li>
+
+          <li>
+            <span><i class="fas fa-heart"></i></span><a href="#">Romantique</a>
+          </li>
+          <li>
+            <span><i class="fas fa-dog"></i></span
+            ><a href="#">Animaux autorisé</a>
+          </li>
+        </ul>
+
+        <div id="boutton"></div>
+
+        <p>
+          <span id="boutton-info"> <i class="fas fa-info"></i> </span> Plus de
+          500 logements sont disponibledans cette ville
+        </p>
       </header>
       <section>
         <div id="resultat-recherche">

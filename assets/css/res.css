@@ -1,3 +1,7 @@
+body {
+  font-family: "Raleway", sans-serif;
+}
+
 h1 {
   color: #0065fc;
 }
@@ -84,4 +88,35 @@ footer a {
 
 #navigation li #boutton-inscrire {
   color: #0065fc;
+}
+#boutton-info {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 1px solid gray;
+  text-align: center;
+  color: #0065fc;
+}
+#boutton-filtre span {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid gray;
+  text-align: center;
+  color: #0065fc;
+  background-color: rgb(184, 220, 236);
+}
+#boutton-filtre li {
+  display: inline-block;
+  height: 20px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  margin: 10px;
+}
+#boutton-filtre a {
+  text-decoration: none;
+}
+#boutton-filtre ul {
 }

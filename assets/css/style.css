@@ -187,18 +187,30 @@ aside {
 }
 .barre-recherche span i {
   background-color: #f2f2f2;
+  
 }
 
 .barre-recherche input.champ-recherche {
-  border: 1px solid transparent;
+  border: 1px solid #f2f2f2;
   text-align: center;
+  color: white;
+  width: 200px;
+  height: 40px;
+
 }
 
 .barre-recherche input#boutton-recherche {
-  width: 100px;
-  height: 40px;
-  color: white;
-  background-color: blue;
-
+  width: 130px
+  height: 100px;
+  color:withe;
+  
+  background-color: #0065fc;
+  border: solid #f2f2f2;
   border-radius: 0 10px 10px 0;
+}
+.barre-recherche
+{
+  display: flex;
+  height: 50px;
+  margin-bottom: 25px;
 }

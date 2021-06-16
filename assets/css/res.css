@@ -12,6 +12,19 @@ ul {
 .conteneur-flex {
   display: flex;
   flex-wrap: wrap;
+  margin-left: 10px;
+}
+.conteneur-flex .element p {
+  font-size: 13px;
+  margin: auto;
+}
+.conteneur-flex .element h3 {
+  margin-top: 0px;
+}
+.conteneur-flex .element i.fa-star {
+  color: #0065fc;
+
+  font-size: 13px;
 }
 
 #main {
@@ -19,21 +32,45 @@ ul {
   height: auto;
 }
 
+#main h1 {
+  color: black;
+}
 #resultat-recherche .element {
-  width: 33%;
+  width: 29%;
+  padding: 5px;
+  margin: 8px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: white;
 }
 
 #resultat-recherche .element .image-resultat {
   overflow: hidden;
   position: relative;
-  height: 160px;
+  height: 100px;
   width: 100%;
+  border: 4px solid white;
+  border-radius: 15px 15px 0 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 #resultat-recherche .element .image-resultat img {
   width: 100%;
   height: 150px;
   margin: 0 auto;
 }
+#resultat-recherche {
+  justify-content: space-between;
+  display: flex;
+}
+#conteneur1 {
+  width: 62%;
+  background-color: #f2f2f2;
+}
+#conteneur2 {
+  width: 34%;
+}
+
 nav ul {
   list-style: none;
   display: flex;
@@ -66,15 +103,36 @@ footer a {
   color: black;
   text-decoration: none;
 }
-#aside hotel-populaire {
+aside {
+  /*
   display: flex;
   width: 35%;
+  */
+  border: #f2f2f2;
+}
+#hotel-populaire {
+  padding: 10px;
   background-color: #f2f2f2;
 }
-.aside images-hotel {
-  width: 30%;
+#hotel-populaire .element-hotel {
+  height: auto;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 1px;
+  margin: 2px;
+}
+#hotel-populaire .element-hotel .hotel-photo {
+  width: 40%;
+}
+#hotel-populaire .element-hotel img {
+  width: 100%;
   height: 150px;
   margin: 0 auto;
+  border-left: 1px solid black;
+}
+#hotel-populaire .element-hotel {
+  display: flex;
 }
 #navigation li a {
   text-decoration: none;
@@ -115,8 +173,32 @@ footer a {
   border: 1px solid gray;
   margin: 10px;
 }
+
 #boutton-filtre a {
   text-decoration: none;
 }
-#boutton-filtre ul {
+#activite {
+  width: 100%;
+  display: flex;}
+  .barre-recherche
+  {
+    width: 100%
+  }
+}
+.barre-recherche span i {
+  background-color: #f2f2f2;
+}
+
+.barre-recherche input.champ-recherche {
+  border: 1px solid transparent;
+  text-align: center;
+}
+
+.barre-recherche input#boutton-recherche {
+  width: 100px;
+  height: 40px;
+  color: white;
+  background-color: blue;
+
+  border-radius: 0 10px 10px 0;
 }

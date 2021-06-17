@@ -12,7 +12,7 @@ ul {
 .conteneur-flex {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 10px;
+  margin-left: 30px;
 }
 .conteneur-flex .element p {
   font-size: 13px;
@@ -48,11 +48,11 @@ ul {
   overflow: hidden;
   position: relative;
   height: 100px;
-  width: 100%;
-  border: 4px solid white;
-  border-radius: 15px 15px 0 0;
-  margin-left: auto;
-  margin-right: auto;
+  /* width: 100%; 
+  border: 1px solid white;*/
+  border-radius: 10px 10px 0 0;
+  /*margin-left: auto;
+  margin-right: auto;*/
 }
 #resultat-recherche .element .image-resultat img {
   width: 100%;
@@ -66,6 +66,12 @@ ul {
 #conteneur1 {
   width: 62%;
   background-color: #f2f2f2;
+  padding-right: 10px;
+  border-radius: 10px;
+}
+#conteneur1 h2
+{
+  padding-left: 20px;;
 }
 #conteneur2 {
   width: 34%;
@@ -116,20 +122,37 @@ aside {
 }
 #hotel-populaire .element-hotel {
   height: auto;
-  width: 100%;
+  width: 85%;
   border: 1px solid white;
   border-radius: 10px;
   padding: 1px;
   margin: 2px;
+  background-color: white;
+  padding-bottom: 1px;
+  margin-bottom: 25px;
+  border-radius: 15px;
 }
 #hotel-populaire .element-hotel .hotel-photo {
   width: 40%;
 }
 #hotel-populaire .element-hotel img {
-  width: 100%;
+  width: 90%;
   height: 150px;
   margin: 0 auto;
-  border-left: 1px solid black;
+  border-radius: 10px 0 0 10px;
+  padding-top:3px ;
+  padding-left: 3px;
+  
+}
+#hotel-populaire .element-hotel p
+{
+font-size: 13px;
+padding-bottom: 20px;
+}
+#hotel-populaire .element-hotel i.fa-star
+{
+color:#0065fc ;
+font-size: 13px;
 }
 #hotel-populaire .element-hotel {
   display: flex;
@@ -186,31 +209,46 @@ aside {
   }
 }
 .barre-recherche span i {
-  background-color: #f2f2f2;
+  min-height: 50px;
+  justify-content: center;
+
   
+}
+.barre-recherche i
+{
+  width: 30px;
+  height: 40px;
+  border-color: #f2f2f2;
+  justify-content: center;
+  font-size: 1.3em;
+  border: 1px solid #f2f2f2;
+  border-radius: 5px 0 0 5px;
+  background-color: #f2f2f2;
+  padding-left:  5px; 
 }
 
 .barre-recherche input.champ-recherche {
   border: 1px solid #f2f2f2;
   text-align: center;
   color: white;
-  width: 200px;
+  width: 230px;
   height: 40px;
 
 }
 
 .barre-recherche input#boutton-recherche {
-  width: 130px
-  height: 100px;
-  color:withe;
-  
+  width: 130px;
+  height: 40px;
+  color: white;
+  font-size: initial;
   background-color: #0065fc;
-  border: solid #f2f2f2;
+  border:none;
   border-radius: 0 10px 10px 0;
+  position: relative;
 }
 .barre-recherche
 {
   display: flex;
   height: 50px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }

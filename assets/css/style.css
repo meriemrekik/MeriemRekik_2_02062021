@@ -8,6 +8,9 @@ h1 {
 ul {
   list-style-type: none;
 }
+.affiche-surtelephone {
+  display: none;
+}
 
 .conteneur-flex {
   display: flex;
@@ -90,12 +93,14 @@ i.fa-star.gris {
 #conteneur1 a {
   text-decoration: none;
   color: black;
-  font-weight: bold;
-  padding-left: 30px;
 }
 #conteneur1 h2 {
   padding-left: 29px;
   padding-top: 10px;
+}
+#resultat-plus {
+  padding-left: 25px;
+  font-weight: bold;
 }
 #conteneur2 {
   width: 34%;
@@ -228,10 +233,15 @@ aside {
 #navigation li #boutton-inscrire {
   color: #0065fc;
 }
+#boutton-inscrire-telephone {
+  display: none;
+}
 #boutton-info {
   display: inline-block;
   height: 20px;
   width: 20px;
+  font-size: 10px;
+  line-height: 20px;
   border-radius: 50%;
   border: 1px solid gray;
   text-align: center;
@@ -248,6 +258,7 @@ aside {
   height: 42px;
   width: 42px;
   margin-top: -6px;
+  margin-left: -2px;
   line-height: 42px;
   border-radius: 50%;
   border: 1px solid rgb(184, 220, 236);
@@ -262,8 +273,8 @@ aside {
   border: 1px solid #e0e0e0;
   font-weight: bold;
   margin: 10px;
-  padding-top: 4px;
-  padding-bottom: 6px;
+  padding-top: 5px;
+  padding-bottom: 7px;
 }
 
 #filtres span {
@@ -292,7 +303,6 @@ aside {
 }
 
 .barre-recherche span i {
-  min-height: 50px;
   justify-content: center;
 }
 
@@ -332,7 +342,7 @@ aside {
 }
 .barre-recherche {
   display: flex;
-
+  height: 40px;
   margin-bottom: 8px;
 }
 
@@ -416,6 +426,22 @@ aside {
 }
 
 @media (min-width: 300px) and (max-width: 767px) {
+  body {
+    margin: 8px 0;
+  }
+
+  header,
+  .recherche,
+  #filtres,
+  #informations,
+  #boutton,
+  #resultat-plus,
+  #activites {
+    padding: 10px;
+  }
+  #boutton-inscrire-telephone {
+    display: block;
+  }
   #resultat-recherche .element {
     width: 97%;
   }
@@ -428,6 +454,11 @@ aside {
   #conteneur2 {
     width: 100%;
   }
+
+  #boutton-filtre {
+    padding-left: 5px;
+  }
+
   activite-marseille {
     flex-direction: column;
   }
@@ -468,7 +499,7 @@ aside {
     width: 43%;
   }
   footer {
-    width: 98%;
+    width: 100%;
     flex-direction: column;
   }
   #activite-marseille .element {
@@ -477,8 +508,69 @@ aside {
   .barre-recherche span i {
     min-height: 29px;
   }
-  #navigation li a.menu-actif {
-    color: #0065fc;
-    border-bottom: 3px solid #0065fc;
+
+  #main {
+    width: 100%;
+  }
+  #navigation {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  #boutton-inscrire-telephone {
+    display: block;
+  }
+  nav {
+    width: 99%;
+    display: flex;
+    justify-content: center;
+  }
+  nav ul {
+    padding: 0;
+  }
+  nav li {
+    list-style: none;
+    margin: 15px;
+  }
+
+  .cacher-telephone {
+    display: none;
+  }
+  .affiche-surtelephone {
+    display: block;
+  }
+
+  #hotel-populaire {
+    border-radius: 0;
+  }
+
+  #activite-marseille .element img {
+    padding-left: 6px;
+  }
+  #activite-marseille h2 {
+    padding-left: 7px;
+  }
+  #activites h2 {
+    padding-left: 5px;
+  }
+  #conteneur1 {
+    background-color: white;
+  }
+  conteneur-flex {
+    margin-left: 18px;
+  }
+  .texte-recherches {
+    margin-left: 14px;
+  }
+  #activite-marseille .element .texte-activite {
+    padding: 10px 20px;
+    box-sizing: border-box;
+  }
+  #activite-marseille a {
+    font-size: 16px;
+  }
+  footer .colonne-footer {
+    width: 100%;
+    box-sizing: border-box;
   }
 }

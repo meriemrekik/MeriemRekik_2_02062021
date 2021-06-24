@@ -10,6 +10,11 @@ ul {
 }
 .affiche-surtelephone {
   display: none;
+  padding-top: 16px;
+  text-decoration: none;
+  color: #0065fc;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 .conteneur-flex {
@@ -276,6 +281,9 @@ aside {
   padding-top: 5px;
   padding-bottom: 7px;
 }
+#boutton-filtre :hover {
+  background-color: #deebff;
+}
 
 #filtres span {
   font-weight: bold;
@@ -420,6 +428,9 @@ aside {
 
 @media (min-width: 768px) and (max-width: 1024px) {
   /* CSS */
+  #navigation li a.menu-actif {
+    font-weight: bold;
+  }
   #resultat-recherche .element {
     width: 44%;
   }
@@ -430,7 +441,6 @@ aside {
     margin: 8px 0;
   }
 
-  header,
   .recherche,
   #filtres,
   #informations,
@@ -521,16 +531,24 @@ aside {
     display: block;
   }
   nav {
-    width: 99%;
+    width: 100%;
     display: flex;
     justify-content: center;
   }
+  nav ul :hover {
+    color: #0065fc;
+    background-color: 3px solid #0065fc;
+    font-weight: bold;
+  }
   nav ul {
     padding: 0;
+    width: 100%;
   }
   nav li {
     list-style: none;
-    margin: 15px;
+    margin: 0;
+
+    font-size: 20px;
   }
 
   .cacher-telephone {
@@ -562,15 +580,47 @@ aside {
   .texte-recherches {
     margin-left: 14px;
   }
-  #activite-marseille .element .texte-activite {
-    padding: 10px 20px;
-    box-sizing: border-box;
-  }
+
   #activite-marseille a {
     font-size: 16px;
   }
   footer .colonne-footer {
     width: 100%;
     box-sizing: border-box;
+  }
+  #navigation li a {
+    color: rgb(70, 66, 66);
+    border-bottom: 3px solid #f2f2f2;
+    padding-bottom: 13px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #navigation li a.menu-actif {
+    border-bottom: 3px solid #0065fc;
+    padding-bottom: 13px;
+    border-top: none;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+  }
+  #boutton-inscrire2 {
+    padding-top: 30px;
+    text-decoration: none;
+    color: #0065fc;
+    font-size: 21px;
+    font-weight: bold;
+    padding-right: 28px;
+  }
+  .boutton-nav {
+    width: 100%;
+  }
+  #navigation img {
+    padding-left: 15px;
+    padding-top: 10px;
+    width: 30%;
   }
 }

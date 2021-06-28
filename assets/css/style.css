@@ -221,12 +221,15 @@ aside {
 
 #hotel-populaire .element-hotel .hotel-photo {
   width: 40%;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  overflow: hidden;
 }
 #hotel-populaire .element-hotel img {
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  border-radius: 10px 0 0 10px;
+  border-radius: 20px 0 0 20px;
   object-fit: cover;
 }
 #hotel-populaire .element-hotel p {
@@ -468,6 +471,9 @@ aside {
 }
 .img-hover-zoom:hover img {
   transform: scale(1.1);
+}
+.img-hover-zoom {
+  overflow: hidden;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {

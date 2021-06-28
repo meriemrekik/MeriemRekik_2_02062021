@@ -10,29 +10,32 @@ ul {
 }
 .affiche-surtelephone {
   display: none;
-  padding-top: 16px;
+  /*  padding-top: 16px;
   text-decoration: none;
   color: #0065fc;
   font-size: 22px;
-  font-weight: bold;
+  font-weight: bold;*/
 }
 
 .conteneur-flex {
   display: flex;
   flex-wrap: wrap;
   margin-left: 20px;
-  margin-right: 20px;
+  margin-right: 22px;
   margin-bottom: 40px;
   justify-content: space-between;
 }
+.conteneur-flex .element .texte-recherches {
+  margin-left: 14px;
+}
 .conteneur-flex .element p {
-  font-size: 13px;
+  font-size: 17px;
   margin: auto;
 }
 .conteneur-flex .element h3 {
   margin-top: 0px;
   margin-bottom: 4px;
-  font-size: 16px;
+  font-size: 20px;
   margin-top: 8px;
 }
 .conteneur-flex .element span.prix {
@@ -40,7 +43,7 @@ ul {
 }
 i.fa-star {
   color: #0065fc;
-  font-size: 10px;
+  font-size: 13px;
 }
 
 i.fa-star.gris {
@@ -51,16 +54,20 @@ i.fa-star.gris {
   width: auto;
   height: auto;
 }
+section.recherche p {
+  margin-top: 0;
+}
 
 #main h1 {
   color: black;
+  margin-bottom: 3px;
 }
 #resultat-recherche .element {
-  width: 28%;
+  width: 30%;
   padding: 5px;
-  margin: 8px 0;
+  margin: 0 0 16px 0;
   border: 1px solid white;
-  border-radius: 10px;
+  border-radius: 20px;
   background-color: white;
   -webkit-box-shadow: 6px 7px 13px -5px rgba(0, 0, 0, 0.42);
   box-shadow: 6px 7px 13px -5px rgba(0, 0, 0, 0.42);
@@ -69,7 +76,7 @@ i.fa-star.gris {
 #resultat-recherche .element .image-resultat {
   overflow: hidden;
   position: relative;
-  height: 110px;
+  height: 133px;
   /* width: 100%; 
   border: 1px solid white;*/
   border-radius: 10px 10px 0 0;
@@ -92,12 +99,13 @@ i.fa-star.gris {
 #conteneur1 {
   width: 63%;
   background-color: #f2f2f2;
-  border-radius: 15px;
+  border-radius: 20px;
   padding-bottom: 15px;
 }
 #conteneur1 a {
   text-decoration: none;
   color: black;
+  font-size: 20px;
 }
 #conteneur1 h2 {
   padding-left: 29px;
@@ -141,11 +149,11 @@ footer {
   padding-bottom: 30px;
   padding-top: 40px;
 }
-footer .colonne-footer h2 {
+footer div h2 {
   font-size: 17px;
   font-weight: bold;
 }
-footer .colonne-footer {
+footer div {
   width: 33%;
   padding-left: 40px;
 }
@@ -172,15 +180,16 @@ aside {
 #hotel-populaire {
   padding: 10px;
   background-color: #f2f2f2;
-  border-radius: 15px;
+  border-radius: 20px;
   padding-left: 30px;
   padding-right: 30px;
 }
+
 #hotel-populaire .element-hotel {
-  height: 140px;
+  height: 166px;
   width: 100%;
   border: 1px solid white;
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 5px;
   -webkit-box-shadow: 6px 7px 13px -5px rgba(0, 0, 0, 0.42);
   box-shadow: 6px 7px 13px -5px rgba(0, 0, 0, 0.42);
@@ -190,6 +199,9 @@ aside {
 
   margin-bottom: 25px;
 }
+#hotel-populaire .hotel-text .etoiles {
+  padding-bottom: 10px;
+}
 #hotel-populaire .hotel-text {
   width: 60%;
   padding-left: 15px;
@@ -198,7 +210,7 @@ aside {
   justify-content: space-between;
 }
 #hotel-populaire .hotel-text h3 {
-  font-size: 16px;
+  font-size: 20px;
   margin-top: 6px;
   font-weight: bold;
   margin-bottom: 0;
@@ -218,7 +230,7 @@ aside {
   object-fit: cover;
 }
 #hotel-populaire .element-hotel p {
-  font-size: 13px;
+  font-size: 17px;
   margin-top: 5px;
 }
 
@@ -230,40 +242,44 @@ aside {
   color: gray;
   padding: 20px 5px 5px 5px;
 }
-#navigation li a.menu-actif {
+#navigation li a:hover {
   color: #0065fc;
   border-top: 2px solid #0065fc;
 }
 
 #navigation li #boutton-inscrire {
   color: #0065fc;
+  font-weight: bold;
 }
 #boutton-inscrire-telephone {
   display: none;
 }
 #boutton-info {
   display: inline-block;
-  height: 20px;
-  width: 20px;
-  font-size: 10px;
+  height: 25px;
+  width: 32px;
+  font-size: 18px;
   line-height: 20px;
   border-radius: 50%;
-  border: 1px solid gray;
+  border: 1px solid #f2f2f2;
   text-align: center;
   color: #0065fc;
   margin-right: 8px;
   margin-left: 10px;
+  padding-bottom: 1px;
+  padding-top: 6px;
 }
 #boutton-filtre {
   display: inline-block;
+  padding-left: 22px;
 }
 
 #boutton-filtre span {
   display: inline-block;
-  height: 42px;
-  width: 42px;
+  height: 44px;
+  width: 44px;
   margin-top: -6px;
-  margin-left: -2px;
+  margin-left: -3px;
   line-height: 42px;
   border-radius: 50%;
   border: 1px solid rgb(184, 220, 236);
@@ -275,7 +291,7 @@ aside {
   display: inline-block;
   height: 30px;
   border-radius: 20px;
-  border: 1px solid #e0e0e0;
+  border: 2px solid #e0e0e0;
   font-weight: bold;
   margin: 10px;
   padding-top: 5px;
@@ -287,6 +303,9 @@ aside {
 
 #filtres span {
   font-weight: bold;
+}
+#filtres {
+  padding-left: 12px;
 }
 #boutton-filtre a {
   text-decoration: none;
@@ -328,12 +347,25 @@ aside {
   margin-left: 3px;
   padding-left: 12px;
 }
-
+.barre-recherche i.fa-search {
+  width: 20px;
+  height: 29px;
+  font-size: 1em;
+  justify-content: center;
+  background-color: blue;
+  color: white;
+  border-radius: 15px;
+  padding-top: 10px;
+  margin-left: -10px;
+}
+::placeholder {
+  color: black;
+  font-size: 15px;
+}
 .barre-recherche input.champ-recherche {
   border: 1px solid #f2f2f2;
   padding-left: 20px;
-  color: black;
-  width: 230px;
+  width: 235px;
   height: 40px;
   font-weight: bold;
 }
@@ -370,37 +402,38 @@ aside {
 }
 
 #activite-marseille #colonne2 .element.premier {
-  height: 220px;
+  height: 231px;
 }
 #activite-marseille #colonne2 .element.deuxieme {
-  height: 145px;
+  height: 138px;
 }
 #activite-marseille #colonne3 .element {
   height: 100%;
 }
 
 #activite-marseille #colonne4 .element.premier {
-  height: 182px;
+  height: 180px;
 }
 #activite-marseille #colonne4 .element.deuxieme {
-  height: 182px;
+  height: 186px;
 }
-#activite-marseille a {
-  text-decoration: none;
+#activite-marseille h3 {
   color: black;
   font-weight: bold;
-  font-size: 13px;
+  font-size: 17px;
+  margin-top: 0;
+  margin-bottom: 5px;
 }
 
 #activite-marseille .colonne {
   width: 23%;
-  height: 400px;
+  height: 415px;
   justify-content: space-between;
   flex-flow: column;
   display: flex;
 }
 #activite-marseille .element {
-  border-radius: 10px;
+  border-radius: 20px;
   overflow: hidden;
   background-color: white;
   position: relative;
@@ -424,6 +457,10 @@ aside {
   left: 0;
   right: 0;
   background-color: white;
+  padding-bottom: 12px;
+  padding-top: 14gpx;
+  padding-left: 17px;
+  font-weight: bold;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -505,7 +542,7 @@ aside {
   #activite-marseille {
     height: auto;
   }
-  footer .colonne-footer {
+  footer div {
     width: 43%;
   }
   footer {
@@ -557,6 +594,9 @@ aside {
   .affiche-surtelephone {
     display: block;
   }
+  .recherche-surtelephone {
+    display: block;
+  }
 
   #hotel-populaire {
     border-radius: 0;
@@ -581,10 +621,10 @@ aside {
     margin-left: 14px;
   }
 
-  #activite-marseille a {
+  #activite-marseille h3 {
     font-size: 16px;
   }
-  footer .colonne-footer {
+  footer div {
     width: 100%;
     box-sizing: border-box;
   }

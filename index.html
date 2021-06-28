@@ -8,8 +8,8 @@
       href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Reservia</title>
   </head>
   <body>
@@ -46,7 +46,8 @@
             placeholder="Marseille,france"
           />
 
-          <input id="boutton-recherche" type="submit" value="Rechercher" />
+          <input id="boutton-recherche" type="submit" value="Rechercher" class="cacher-telephone" />
+          <i class="fas fa-search affiche-surtelephone" id="boutton-loupe"></i>
         </span>
       </section>
 
@@ -75,12 +76,12 @@
       <div id="boutton"></div>
 
       <p id="informations">
-        <span id="boutton-info"> <i class="fas fa-info"></i> </span> Plus de 500
+        <span id="boutton-info"> <i class="fas fa-info"></i> </span>Plus de 500
         logements sont disponibles dans cette ville
       </p>
 
-      <section>
-        <div id="resultat-recherche">
+      <section id="resultat-recherche">
+        
           <div id="conteneur1">
             <h2>Hébergements à Marseille</h2>
             <div class="conteneur-flex">
@@ -148,7 +149,7 @@
                   <div class="image-resultat">
                     <img
                       src="assets/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
-                      alt="Hotel_de_la_mer"
+                      alt="Hotel de la mer"
                     />
                   </div>
                   <div class="texte-recherches">
@@ -281,11 +282,11 @@
               </div>
             </aside>
           </div>
-        </div>
+        
       </section>
 
       <section id="activites">
-        <h2>Activites à Marseille</h2>
+        <h2>Activités à Marseille</h2>
         <div id="activite-marseille">
           <div id="colonne1" class="colonne">
             <div class="element">
@@ -296,7 +297,9 @@
                     alt="vieux-porte"
                   />
                 </div>
-                <div class="texte-activite">Vieux port</div>
+                <div class="texte-activite">
+                  <h3>Vieux port</h3>
+                </div>
               </a>
             </div>
           </div>
@@ -309,9 +312,10 @@
                     src="assets/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg "
                     alt="Forte_de_pomègues"
                   />
+                  
                 </div>
                 <div class="texte-activite">
-                  <a href="#">Fort de Pomègues</a>
+                  <h3>Fort de Pomègues</h3>
                 </div>
               </a>
             </div>
@@ -324,7 +328,7 @@
                   />
                 </div>
                 <div class="texte-activite">
-                  <a href="#">Ile de Frioul</a>
+                  <h3>Ile de Frioul</h3>
                 </div>
               </a>
             </div>
@@ -340,7 +344,7 @@
                   />
                 </div>
                 <div class="texte-activite">
-                  <a href="#">Parc National des Calanques</a>
+                  <h3>Parc National des Calanques</h3>
                 </div>
               </a>
             </div>
@@ -356,7 +360,7 @@
                   />
                 </div>
                 <div class="texte-activite">
-                  <a href="#">Notre-Dame-de-la-Garde </a>
+                  <h3>Notre-Dame-de-la-Garde <h3>
                 </div>
               </a>
             </div>
@@ -369,7 +373,7 @@
                   />
                 </div>
                 <div class="texte-activite">
-                  <a href="#">Parc Longchamp</a>
+                  <h3>Parc Longchamp</h3>
                 </div>
               </a>
             </div>
@@ -378,7 +382,7 @@
       </section>
 
       <footer>
-        <div class="colonne-footer">
+        <div>
           <h2>A propos</h2>
           <ul>
             <li><a href="#">Fonctionnement du site</a></li>
@@ -387,7 +391,7 @@
           </ul>
         </div>
 
-        <div class="colonne-footer">
+        <div>
           <h2>Nos hébergements</h2>
           <ul>
             <li><a href="#">Charte qualité</a></li>
@@ -395,7 +399,7 @@
           </ul>
         </div>
 
-        <div class="colonne-footer">
+        <div>
           <h2>Assistance</h2>
           <ul>
             <li><a href="#">Centre d'aide</a></li>

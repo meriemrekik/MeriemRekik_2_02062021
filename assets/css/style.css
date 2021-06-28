@@ -463,6 +463,13 @@ aside {
   font-weight: bold;
 }
 
+.img-hover-zoom img {
+  transition: transform 0.25s ease-in;
+}
+.img-hover-zoom:hover img {
+  transform: scale(1.1);
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
   /* CSS */
   #navigation li a.menu-actif {

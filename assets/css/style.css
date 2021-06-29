@@ -482,7 +482,53 @@ aside {
     font-weight: bold;
   }
   #resultat-recherche .element {
-    width: 44%;
+    width: 46%;
+  }
+
+  #resultat-recherche {
+    flex-direction: column;
+  }
+  #conteneur1 {
+    width: 100%;
+    border-radius: 0;
+  }
+  #conteneur2 {
+    width: 100%;
+    border-radius: 0;
+  }
+  #hotel-populaire {
+    border-radius: 0;
+  }
+
+  #activite-marseille {
+    /*
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    */
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+  #activite-marseille .colonne {
+    width: 48%;
+    height: 415px;
+    /* justify-content: space-between;
+    flex-flow: column; 
+    display: flex;*/
+    margin-bottom: 40px;
+  }
+  #colonne1 {
+    order: 1;
+  }
+  #colonne2 {
+    order: 2;
+  }
+  #colonne3 {
+    order: 4;
+  }
+  #colonne4 {
+    order: 3;
   }
 }
 

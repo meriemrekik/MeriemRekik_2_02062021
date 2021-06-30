@@ -14,7 +14,7 @@
   </head>
   <body>
     <div id="main">
-      <header>
+      <header class="conteneur-principale">
         <div id="navigation">
           <img src="assets/images/logo/Reservia.svg" alt="logo-reservia" />
           <a id="boutton-inscrire2" class="affiche-surtelephone" href="#"
@@ -33,7 +33,7 @@
           </nav>
         </div>
       </header>
-      <section class="recherche">
+      <section id="recherche" class="recherche conteneur-principale">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 
         <p>En plein centre ville ou en plein nature</p>
@@ -56,7 +56,7 @@
         </span>
       </section>
 
-      <div id="filtres">
+      <div id="filtres" class="conteneur-principale">
         <span>Filtres</span>
         <ul id="boutton-filtre">
           <li>
@@ -80,12 +80,14 @@
 
       <div id="boutton"></div>
 
-      <p id="informations">
-        <span id="boutton-info"> <i class="fas fa-info"></i> </span>Plus de 500
-        logements sont disponibles dans cette ville
-      </p>
+      <div id="informations" class="conteneur-principale">
+        <p>
+          <span id="boutton-info"> <i class="fas fa-info"></i> </span>Plus de
+          500 logements sont disponibles dans cette ville
+        </p>
+      </div>
 
-      <section id="resultat-recherche">
+      <section id="resultat-recherche" class="conteneur-principale">
         <div id="conteneur1">
           <h2>Hébergements à Marseille</h2>
           <div class="conteneur-flex">
@@ -288,7 +290,7 @@
         </div>
       </section>
 
-      <section id="activites">
+      <section id="activites" class="conteneur-principale">
         <h2>Activités à Marseille</h2>
         <div id="activite-marseille">
           <div id="colonne1" class="colonne">
@@ -384,29 +386,31 @@
       </section>
 
       <footer>
-        <div>
-          <h2>A propos</h2>
-          <ul>
-            <li><a href="#">Fonctionnement du site</a></li>
-            <li><a href="#">Conditions générales de vente</a></li>
-            <li><a href="#">Données et confidentialité</a></li>
-          </ul>
-        </div>
+        <div class="conteneur-principale">
+          <div>
+            <h2>A propos</h2>
+            <ul>
+              <li><a href="#">Fonctionnement du site</a></li>
+              <li><a href="#">Conditions générales de vente</a></li>
+              <li><a href="#">Données et confidentialité</a></li>
+            </ul>
+          </div>
 
-        <div>
-          <h2>Nos hébergements</h2>
-          <ul>
-            <li><a href="#">Charte qualité</a></li>
-            <li><a href="#">Soumettre votre hôtel</a></li>
-          </ul>
-        </div>
+          <div>
+            <h2>Nos hébergements</h2>
+            <ul>
+              <li><a href="#">Charte qualité</a></li>
+              <li><a href="#">Soumettre votre hôtel</a></li>
+            </ul>
+          </div>
 
-        <div>
-          <h2>Assistance</h2>
-          <ul>
-            <li><a href="#">Centre d'aide</a></li>
-            <li><a href="#">Nous contacter</a></li>
-          </ul>
+          <div>
+            <h2>Assistance</h2>
+            <ul>
+              <li><a href="#">Centre d'aide</a></li>
+              <li><a href="#">Nous contacter</a></li>
+            </ul>
+          </div>
         </div>
       </footer>
     </div>

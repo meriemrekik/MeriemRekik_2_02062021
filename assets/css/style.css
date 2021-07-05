@@ -327,6 +327,9 @@ aside {
 #filtres {
   padding-left: 12px;
 }
+input#boutton-recherche:hover {
+  cursor: pointer;
+}
 #boutton-filtre a {
   text-decoration: none;
   color: black;
@@ -611,6 +614,7 @@ aside {
   #activites,
   #informations {
     box-sizing: border-box;
+    padding-left: 12px;
   }
   #main h1 {
     color: black;
@@ -734,6 +738,8 @@ aside {
 
   #hotel-populaire {
     border-radius: 0;
+    padding-left: 22px;
+    padding-right: 26px;
   }
 
   #activite-marseille .element img {
@@ -796,5 +802,20 @@ aside {
     padding-left: 15px;
     padding-top: 10px;
     width: 30%;
+  }
+  #informations {
+    padding-left: 47px;
+  }
+  #informations span#boutton-info {
+    margin-left: -40px;
+  }
+  #informations p {
+    margin: 0;
+  }
+  #informations.conteneur-principale {
+    padding-top: 0;
+  }
+  #resultat-plus a {
+    padding-left: 13px;
   }
 }

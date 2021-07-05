@@ -612,12 +612,18 @@ aside {
   #informations {
     box-sizing: border-box;
   }
+  #main h1 {
+    color: black;
+    margin-bottom: 3px;
+    font-size: 26px;
+  }
   #boutton-inscrire-telephone {
     display: block;
   }
   #resultat-recherche .element {
     width: 97%;
   }
+
   #resultat-recherche {
     flex-direction: column-reverse;
   }
@@ -630,6 +636,7 @@ aside {
 
   #boutton-filtre {
     padding-left: 5px;
+    margin-left: -15px;
   }
   section.recherche p {
     margin-top: 9px;
@@ -685,6 +692,7 @@ aside {
   #main {
     width: 100%;
   }
+
   #navigation {
     display: flex;
     justify-content: space-between;

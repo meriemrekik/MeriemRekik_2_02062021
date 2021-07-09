@@ -397,7 +397,7 @@ input#boutton-recherche:hover {
 .barre-recherche input.champ-recherche {
   border: 1px solid #f2f2f2;
   padding-left: 20px;
-  width: 226px;
+  width: 270px;
   height: 40px;
   font-weight: bold;
   padding-top: 15px;
@@ -613,7 +613,7 @@ input#boutton-recherche:hover {
 
 @media (max-width: 767px) {
   body {
-    margin: 8px 0;
+    margin: 8px 0 0;
   }
 
   .recherche,

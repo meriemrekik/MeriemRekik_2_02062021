@@ -150,7 +150,15 @@ nav li {
   display: flex;
   justify-content: space-between;
 }
-#navigation li a.menu-actif {
+
+#logo-conteneur {
+  width: 100%;
+}
+#logo-conteneur img {
+  margin-top: 10px;
+}
+
+#navigation a.menu-actif {
   border-top: 3px solid #0065fc;
 
   color: #0065fc;
@@ -266,23 +274,25 @@ aside {
 #hotel-populaire .element-hotel {
   display: flex;
 }
-#navigation li a {
+
+#navigation a {
   text-decoration: none;
   color: gray;
   padding: 20px 5px 5px 5px;
 }
-#navigation li a:hover {
+#navigation #boutton-inscrire {
+  color: #0065fc;
+  font-weight: bold;
+  margin-left: 5px;
+  margin-top: 5px;
+  border-top: 2px solid transparent;
+}
+#navigation a:hover,
+#navigation #boutton-inscrire:hover {
   color: #0065fc;
   border-top: 2px solid #0065fc;
 }
 
-#navigation li #boutton-inscrire {
-  color: #0065fc;
-  font-weight: bold;
-}
-#boutton-inscrire-telephone {
-  display: none;
-}
 #boutton-info {
   display: inline-block;
   height: 25px;
@@ -528,7 +538,7 @@ input#boutton-recherche:hover {
   #filtres {
     box-sizing: border-box;
   }
-  #navigation li a.menu-actif {
+  #navigation a.menu-actif {
     font-weight: bold;
   }
   #resultat-recherche .element {
@@ -640,9 +650,7 @@ input#boutton-recherche:hover {
     margin-bottom: 3px;
     font-size: 26px;
   }
-  #boutton-inscrire-telephone {
-    display: block;
-  }
+
   #resultat-recherche .element {
     width: 97%;
   }
@@ -728,9 +736,35 @@ input#boutton-recherche:hover {
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  #boutton-inscrire-telephone {
-    display: block;
+
+  #navigation #logo-conteneur {
+    order: 1;
+    width: 50%;
   }
+
+  #navigation img {
+    padding-left: 15px;
+    padding-top: 10px;
+    width: 60%;
+    margin-top: 0px;
+  }
+
+  #navigation #boutton-inscrire {
+    order: 2;
+    width: 50%;
+    text-align: right;
+    box-sizing: border-box;
+    margin: 0;
+    border-bottom: none;
+
+    padding-top: 28px;
+    font-size: 21px;
+    padding-right: 28px;
+  }
+  #navigation nav {
+    order: 3;
+  }
+
   nav {
     width: 100%;
     display: flex;
@@ -797,7 +831,7 @@ input#boutton-recherche:hover {
     width: 100%;
     box-sizing: border-box;
   }
-  #navigation li a {
+  #navigation a {
     color: rgb(70, 66, 66);
     border-bottom: 3px solid #f2f2f2;
     padding-bottom: 13px;
@@ -807,20 +841,20 @@ input#boutton-recherche:hover {
     padding-left: 0;
     padding-right: 0;
   }
-  #navigation li a.menu-actif {
+  #navigation a.menu-actif {
     border-bottom: 3px solid #f2f2f2;
     border-top: none;
     font-weight: normal;
     color: inherit;
   }
-  #navigation li a:hover,
-  #navigation li a.menu-actif:hover {
+  #navigation a:hover,
+  #navigation a.menu-actif:hover {
     border-top: none;
     color: #0065fc;
     border-bottom: 3px solid #0065fc;
     font-weight: 700;
   }
-  #boutton-inscrire2 {
+  #boutton-inscrire {
     padding-top: 30px;
     text-decoration: none;
     color: #0065fc;
@@ -831,11 +865,7 @@ input#boutton-recherche:hover {
   .boutton-nav {
     width: 100%;
   }
-  #navigation img {
-    padding-left: 15px;
-    padding-top: 10px;
-    width: 30%;
-  }
+
   #informations {
     padding-left: 47px;
   }

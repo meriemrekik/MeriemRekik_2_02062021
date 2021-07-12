@@ -53,7 +53,7 @@ i.fa-star.gris {
   color: rgb(207, 203, 203);
 }
 
-#main {
+main {
   width: auto;
   height: auto;
 }
@@ -61,21 +61,20 @@ section.recherche p {
   margin-top: 0;
 }
 
-#main h1 {
+main h1 {
   color: black;
   margin-bottom: 3px;
   font-weight: 800;
 }
 #resultat-recherche .element {
   width: 29%;
-  padding: 5px;
+  padding: 6px;
   margin: 0 0 16px 0;
-  border: 1px solid white;
   border-radius: 20px;
   background-color: white;
   /* -webkit-box-shadow: 6px 7px 13px -5px rgba(0, 0, 0, 0.42);
-  box-shadow: 6px 7px 13px -5px rgba(0, 0, 0, 0.42);*/
-  -webkit-box-shadow: 4px 4px 10px -2px rgba(0, 0, 0, 0.1);
+  box-shadow: 6px 7px 13px -5px rgba(0, 0, 0, 0.42);
+  -webkit-box-shadow: 4px 4px 10px -2px rgba(0, 0, 0, 0.1);*/
   box-shadow: 4px 4px 10px -2px rgba(0, 0, 0, 0.1);
 }
 
@@ -211,14 +210,14 @@ aside {
 #hotel-populaire .element-hotel {
   height: 140px;
   width: 100%;
-  border: 1px solid white;
+  /* border: 1px solid white;*/
   border-radius: 20px;
-  padding: 5px;
+  padding: 6px;
   /*
   -webkit-box-shadow: 6px 7px 13px -5px rgba(0, 0, 0, 0.42);
   box-shadow: 6px 7px 13px -5px rgba(0, 0, 0, 0.42);
-*/
-  -webkit-box-shadow: 4px 4px 10px -2px rgba(0, 0, 0, 0.1);
+
+  -webkit-box-shadow: 4px 4px 10px -2px rgba(0, 0, 0, 0.1);*/
   box-shadow: 4px 4px 10px -2px rgba(0, 0, 0, 0.1);
 
   background-color: white;
@@ -306,13 +305,13 @@ aside {
 
 #boutton-filtre span {
   display: inline-block;
-  height: 44px;
-  width: 44px;
+  height: 46px;
+  width: 46px;
   margin-top: -6px;
   margin-left: -3px;
   line-height: 42px;
   border-radius: 50%;
-  border: 1px solid rgb(184, 220, 236);
+  /*border: 1px solid rgb(184, 220, 236);*/
   text-align: center;
   color: #0065fc;
   background-color: rgb(184, 220, 236);
@@ -367,12 +366,12 @@ input#boutton-recherche:hover {
 }
 
 .barre-recherche i {
-  width: 20px;
-  height: 28px;
-  border-color: #f2f2f2;
+  width: 22px;
+  height: 30px;
+  /*border-color: #f2f2f2;*/
   justify-content: center;
   font-size: 1em;
-  border: 1px solid #f2f2f2;
+  /*border: 1px solid #f2f2f2;*/
   border-radius: 10px 0 0 10px;
   background-color: #f2f2f2;
   padding-top: 10px;
@@ -419,6 +418,10 @@ input#boutton-recherche:hover {
   display: flex;
   height: 40px;
   margin-bottom: 8px;
+}
+
+.barre-recherche .mapmarker {
+  text-align: center;
 }
 
 #activite-marseille {
@@ -473,8 +476,8 @@ input#boutton-recherche:hover {
   background-color: white;
   position: relative;
   /*-webkit-box-shadow: 6px 7px 13px -5px rgba(0, 0, 0, 0.42);
-  box-shadow: 6px 7px 13px -5px rgba(0, 0, 0, 0.42);*/
-  -webkit-box-shadow: 4px 4px 10px -2px rgba(0, 0, 0, 0.1);
+  box-shadow: 6px 7px 13px -5px rgba(0, 0, 0, 0.42);
+  -webkit-box-shadow: 4px 4px 10px -2px rgba(0, 0, 0, 0.1);*/
   box-shadow: 4px 4px 10px -2px rgba(0, 0, 0, 0.1);
 }
 
@@ -495,7 +498,7 @@ input#boutton-recherche:hover {
   right: 0;
   background-color: white;
   padding-bottom: 12px;
-  padding-top: 14gpx;
+  padding-top: 14px;
   padding-left: 17px;
   font-weight: bold;
 }
@@ -605,7 +608,7 @@ input#boutton-recherche:hover {
     order: 3;
   }
 
-  #main h1 {
+  main h1 {
     color: black;
     margin-bottom: 4px;
     font-weight: bold;
@@ -632,7 +635,7 @@ input#boutton-recherche:hover {
     box-sizing: border-box;
     padding-left: 12px;
   }
-  #main h1 {
+  main h1 {
     color: black;
     margin-bottom: 3px;
     font-size: 26px;
@@ -716,7 +719,7 @@ input#boutton-recherche:hover {
     min-height: 29px;
   }
 
-  #main {
+  main {
     width: 100%;
   }
 
@@ -733,11 +736,13 @@ input#boutton-recherche:hover {
     display: flex;
     justify-content: center;
   }
+  /*
   nav ul :hover {
     color: #0065fc;
     background-color: 3px solid #0065fc;
     font-weight: bold;
-  }
+  }*/
+
   nav ul {
     padding: 0;
     width: 100%;
@@ -803,13 +808,17 @@ input#boutton-recherche:hover {
     padding-right: 0;
   }
   #navigation li a.menu-actif {
-    border-bottom: 3px solid #0065fc;
-    padding-bottom: 13px;
+    border-bottom: 3px solid #f2f2f2;
     border-top: none;
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-    font-weight: bold;
+    font-weight: normal;
+    color: inherit;
+  }
+  #navigation li a:hover,
+  #navigation li a.menu-actif:hover {
+    border-top: none;
+    color: #0065fc;
+    border-bottom: 3px solid #0065fc;
+    font-weight: 700;
   }
   #boutton-inscrire2 {
     padding-top: 30px;
